@@ -9,12 +9,12 @@ for element in "${array[@]}"
 do
 	#iterate over the elements
 	#echo out the window
-	window_name=$(xdotool getwindowname $element)
+	window_name=$(xdotool getwindowname $element
 	if [[ $window_name == *"WaveForms"* ]]
 	then
-		echo "Found waveform"
+		echo "Found waveform window el" $element
 		waveforms_window=$element
 	fi
 done
 
-echo "Waveforms Window is" $element
+echo "Waveforms Window is" $waveforms_window
