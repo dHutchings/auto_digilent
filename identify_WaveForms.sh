@@ -17,4 +17,4 @@ do
 	fi
 done
 
-echo "Waveforms Window is " $element
+echo "Waveforms Window is" $element
