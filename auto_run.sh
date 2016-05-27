@@ -30,23 +30,19 @@ if [ "$BOARDCOUNT" -gt "0" ]; then
 	#waveforms is setup to load the last workspace.... which is the workspace that this computer wants.
 	#we will then use xdotool magic to enable it.
 	echo "Running Window Identifier"
-	source /home/pi/Desktop/auto_digilent/auto_digilent/identify_WaveForms.sh
+	source /home/pi/Desktop/auto_digilent/identify_WaveForms.sh
 	echo "Window @ " $waveforms_window
 
 	#YOUR MOVING & CLICKING HERE
 
 	#moving mouse & click, on o-scope.  Click once will bring window to front & run the mouse click
-	xdotool mousemove --window $waveforms_window 120 40
+	xdotool mousemove --window $waveforms_window 200 40
 	xdotool click 1
 	#click 1 means "left click"
 	sleep 5
 	#sleep 5 seconds so the laggy raspi can catch up.
 
-	xdotool mousemove --window $waveforms_window 250 40
-	xdotool click 1
-	sleep 5
-
-	xdotool mousemove --window $waveforms_window 460 40
+	xdotool mousemove --window $waveforms_window 320 40
 	xdotool click 1
 	sleep 5
 
