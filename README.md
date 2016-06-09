@@ -27,8 +27,9 @@ sudo apt-get install git-cola
 sudo dpkg -i digilent.waveforms_3.2.6_armhf.deb
 sudo dpkg -i digilent.adept.runtime_2.16.1-armhf.deb 
 
-##sudo dpkg -i digilent.adept.2.16.1-armnf.deb
-##this one isn't needed---i think
+
+//sudo dpkg -i digilent.adept.2.16.1-armnf.deb
+//this one isn't needed---i think
 
 4) Edit the file to auto-start the scripts.
 
