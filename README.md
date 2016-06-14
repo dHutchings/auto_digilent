@@ -47,13 +47,11 @@ Then, close the file (CTRL-X, then "Y").
 5) Disable screensaver.
 
 
-edit /etc/xdg/lxsession/LXDE/autostart...... by running
-sudo nano /etc/xdg/lxsession/LXDE/autostart
+edit /etc/lightdim/lightdim.conf by running
+sudo nano /etc/lightdim/lightdim.conf
 
-add the following 3 lines to the bottom:
-@xset s noblank
-@xset s off
-@xset -dpms
+add the following 1 lines to the [Seat Defaults] section:
+xserver-command=X -s 0 dpms
 
 6) Setup the options you want the waveforms to boot into.
 
