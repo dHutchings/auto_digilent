@@ -23,7 +23,7 @@ git clone https://github.com/dHutchings/auto_digilent.git
 
 3) Run the following installs, while located in the git repo you just cloned.
 
-sudo apt-get install git-cola
+sudo apt-get install xdotool
 
 sudo dpkg -i digilent.waveforms_3.2.6_armhf.deb
 sudo dpkg -i digilent.adept.runtime_2.16.1-armhf.deb 
