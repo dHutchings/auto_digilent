@@ -44,7 +44,18 @@ add the following line to the bottom:
 
 Then, close the file (CTRL-X, then "Y").
 
-5) Setup the options you want the waveforms to boot into.
+5) Disable screensaver.
+
+
+edit /etc/xdg/lxsession/LXDE/autostart...... by running
+sudo nano /etc/xdg/lxsession/LXDE/autostart
+
+add the following 3 lines to the bottom:
+@xset s noblank
+@xset s off
+@xset -dpms
+
+6) Setup the options you want the waveforms to boot into.
 
 Startup waveforms, by running 'waveforms' from a terminal.
 Once it boots, check the option "Open last session on boot"
@@ -53,7 +64,7 @@ Then, save the workspace.
 
 Now, every time waveforms is opened, it should automatically boot into the workspace you want, except with every instrument off.
 
-6) Calibrate the click locations.
+7) Calibrate the click locations.
 
 Now, you will be editing the auto_run.sh file (located in the auto_digilent git repo), starting on line 36:
 nano auto_run.sh
@@ -71,6 +82,6 @@ the xdotool mousemove command is a little hectic, so just pay attention to the l
 Those are the x/y locations that the cursor is moved to, measured in pixels from the top-left corner of the waveforms window.
 
 
-7) Test, and repeat 6 as needed.
+8) Test, and repeat 7 as needed.
 
 Once it runs by directly calling the script, reboot the raspi and see if autoboot works.
